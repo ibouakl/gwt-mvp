@@ -1,0 +1,715 @@
+.gwt-PopupPanel {
+	border: 1px solid #2A8EBF;
+	background-color: white;
+}
+
+/**                Tree css style used by AdvanceTree widget             */
+.gwt-Tree {
+	
+}
+
+.gwt-Tree .gwt-TreeItem span * {
+	margin: 0 4px;
+}
+
+.gwt-Tree .gwt-TreeItem {
+	font-size: 80%;
+	cursor: default;
+}
+
+.gwt-Tree .gwt-TreeItem span {
+	padding: 2px 0;
+}
+
+.gwt-Tree .gwt-TreeItem-selected span {
+	background-color: #C3D9FF;
+}
+
+.AdvanceTree {
+	
+}
+
+.AdvanceTree-SelectedItem,.gwtcomp-SuperTableRowSelected {
+	background-color: #0099CC;
+	color: #fff;
+}
+
+.Tree-Popup-Menu {
+	z-index: 2000;
+}
+
+/** Super Table  CSS. */
+.gwtcomp-SuperTable {
+	width: 100%;
+	border: 1px solid #aaaaaa;
+	border-collapse: collapse;
+}
+
+.gwtcomp-SuperTableHeader {
+	padding: 5px 5px 5px 5px;
+	background: url(../images/redGradient.png) repeat-x #FE0000;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.gwtcomp-SuperTableHeader b {
+	color: #ffffff;
+}
+
+.gwtcomp-SuperTableHeader table {
+	margin: 0;
+}
+
+.gwtcomp-SuperTableCell {
+	padding: 5px 5px 5px 5px;
+}
+
+.gwtcomp-SuperTableColumnSelector {
+	background-color: white;
+	padding: 2px 2px 2px 2px;
+	border: 1px solid black;
+}
+
+.gwtcomp-SuperTableRowOdd {
+	background-color: #DDDDDD;
+	cursor: pointer;;
+}
+
+.gwtcomp-SuperTableRowEven {
+	background-color: #FFFFFF;
+	cursor: pointer;
+}
+
+.gwtcomp-supertablerowselected {
+	font-size: 11px;
+}
+
+.gwtcomp-SuperTableCellSelected {
+	background-color: #0099CC;
+	padding: 5px 5px 5px 5px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.gwtcomp-SuperTableRowSelector {
+	cursor: hand;
+}
+
+.gwtcomp-SortArrow {
+	cursor: pointer;
+	margin-top: 4px;
+}
+
+.gwtcomp-grid-row-highlight {
+	background-color: #e6e6e6;
+}
+
+/**                       DATA GRID STYLES             */
+.data-Grid {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #618db7;
+}
+
+.data-Grid thead {
+	
+}
+
+.data-Grid thead tr {
+	text-align: left;
+	padding: 0.5ex 0 0.5ex 0;
+	/* background: url(../images/redGradient.png) repeat-x #FE0000; */
+	height: 26px;
+	border: 1px solid #618db7;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+}
+
+.data-Grid thead tr th {
+	padding: 0.25em 0.5em;
+	border: 1px solid #618db7;
+}
+
+.data-Grid thead tr th.hide {
+	display: none;
+}
+
+.data-Grid tbody tr td {
+	padding: 0.25em 0.5em;
+	border: 1px solid #acc7d7;
+}
+
+.data-Grid tbody tr.odd {
+	padding: 0.5ex 2em 0.5ex 2em;
+	height: 26px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #acc7d7;
+}
+
+.data-Grid tbody tr.even {
+	padding: 0.5ex 2em 0.5ex 2em;
+	height: 26px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	background-color: #e4f2f6;
+	border: 1px solid #acc7d7;
+}
+
+.data-Grid tbody tr.highlight {
+	font-family: Verdana, Arial, sans-serif;
+	padding: 0.5ex 2em 0.5ex 2em;
+	height: 26px;
+	font-size: 11px;
+	border: 1px solid #acc7d7;
+}
+
+.data-Grid tbody tr.highlight {
+	background-color: #e6e6e6;
+}
+
+.data-Grid tbody tr td.hide {
+	display: none;
+}
+
+.data-Grid tbody tr.popup {
+	background-color: #CF9;
+}
+
+/** OutlookStackPanel **/
+.OutlookStack {
+	border: 1px solid #7598c7;
+	font-size: 12px;
+	width: 100%;
+}
+
+.OutlookStackHeader {
+	border-bottom: 1px solid #7598c7;
+	background-image: url('images/OutlookStack-bg.png');
+	background-repeat: repeat-x;
+	white-space: nowrap;
+	cursor: pointer;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.OutlookStackHeader-over {
+	border-bottom: 1px solid #7598c7;
+	background-image: url('images/OutlookStack-bgover.png');
+	background-repeat: repeat-x;
+	white-space: nowrap;
+	cursor: pointer;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.OutlookStackHeader-selected {
+	border-bottom: 1px solid #7598c7;
+	background-image: url('images/OutlookStack-bgselected.png');
+	background-repeat: repeat-x;
+	white-space: nowrap;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.OutlookStackHeaderInner {
+	vertical-align: middle;
+}
+
+.OutlookStackContent {
+	border-bottom: 1px solid #7598c7;
+}
+
+/** HyperlinkButton **/
+.HyperlinkButton {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+
+.HyperlinkButton-disabled {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	cursor: default;
+}
+
+.HyperlinkButton-left,.HyperlinkButton-right,.HyperlinkButton-left-disabled,.HyperlinkButton-right-disabled
+	{
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.HyperlinkButton-left {
+	background-image: url('images/HyperlinkButton-left.png');
+}
+
+.HyperlinkButton-right {
+	background-image: url('images/HyperlinkButton-right.png');
+}
+
+.HyperlinkButton-left-disabled {
+	background-image: url('images/HyperlinkButton-left-disabled.png');
+}
+
+.HyperlinkButton-right-disabled {
+	background-image: url('images/HyperlinkButton-right-disabled.png');
+}
+
+.HyperlinkButton-bg {
+	background-image: url('images/HyperlinkButton-bg.png');
+	background-repeat: repeat-x;
+	font-size: 11px;
+	padding: 0px 5px 0px 5px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.HyperlinkButton-bg-disabled {
+	background-image: url('images/HyperlinkButton-bg-disabled.png');
+	background-repeat: repeat-x;
+	color: #ACACAC;
+	font-size: 11px;
+	padding: 0px 5px 0px 5px;
+	white-space: nowrap;
+}
+
+.HyperlinkButton-bg:hover {
+	cursor: pointer;
+	color: white;
+}
+
+/** AdvanceVerticalPanel && AdvanceHorozontalPanel CSS  **/
+.advanceHorizontalPanel {
+	
+}
+
+.advanceHorizontalPanel .left {
+	float: left;
+	padding-left: 2px
+}
+
+.advanceHorizontalPanel .right {
+	float: right;
+	padding-right: 2px;
+}
+
+.advanceVerticalPanel {
+	
+}
+
+.advanceVerticalPanel .vertical {
+	display: block !important;
+	clear: both;
+}
+
+.gwt-DialogBox {
+	background-color: white;
+	border: 1px solid black;
+	z-index: 10000;
+}
+
+.gwt-DialogBox .Caption {
+	background: url(images/redGradient.png) repeat-x #FE0000;
+	height: 26px;
+	border: 1px solid #618db7;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	cursor: move;
+}
+
+.gwt-DialogBox .Caption-Panel {
+	background: url(images/navigation_separator_blue.gif) repeat-x #FE0000;
+	height: 26px;
+	border-bottom: 1px solid black;
+	padding: 5px;
+	cursor: move;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+.gwt-DialogBox .Caption-Panel  .Caption-Title {
+	margin: auto;
+	line-height: 24px;
+}
+
+.gwt-DialogBox .Caption-Panel  .Close-Panel {
+	float: right;
+}
+
+.gwt-DialogBox .Caption-Panel  .Close-Panel img {
+	margin-top: 6px;
+	cursor: pointer;
+}
+
+.gwt-DialogBox .dialogContent,.gwt-DialogBox .dialogMiddleCenterInner,.gwt-DialogBox .dialogBottomCenter,.gwt-DialogBox .dialogTopCenter
+	{
+	background: white;
+}
+
+.gwt-DialogBox fieldset {
+	margin: 0 10px;
+}
+
+a.duplicate_icon {
+	background: url(images/duplicate.png) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+a.editAction_icon {
+	background: url(images/action_edit.gif) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+a.resetAction_icon {
+	background: url(images/action_reset.jpg) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+a.delete_icon {
+	background: url(images/action_delete.gif) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+a.publish_icon {
+	background: url(images/publish.png) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+a.lockPublish_icon {
+	background: url(images/lock.gif) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+a.update_icon {
+	background: url(images/update.png) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+/** Button Panel  CSS. */
+.gwtcomp-ButtonPanel {
+	
+}
+
+.gwtcomp-ButtonPanel-Button {
+	cursor: hand;
+	margin-right: 5px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.MobileTooltip {
+	border: 1px solid black;
+	padding: 2px 3px 3px 3px;
+	font-size: smaller;
+	background-color: #ffffcc;
+	z-index: 20000;
+}
+
+/** Dual List CSS. */
+.DualList .dragdrop-selected,.DualList .dragdrop-dragging,.DualList .dragdrop-proxy
+	{
+	filter: alpha(enabled =                                             
+
+                                                     false);
+	opacity: 1.0;
+}
+
+.DualList .dragdrop-boundary {
+	border: none;
+	background-color: transparent;
+}
+
+.DualList .SimpleListBox {
+	border: 1px solid gray;
+	padding: 10px;
+	background-color: #FFFFE6;
+	padding-bottom: 20px;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+.DualList .dragdrop-movable-panel {
+	border: none;
+}
+
+.DualList-center {
+	margin: 0.4em;
+}
+
+.DualList-center TD {
+	padding: 0.2em 0.4em;
+}
+
+.DualList-center BUTTON {
+	width: 4em;
+}
+
+.DualList-item-has-content {
+	cursor: pointer;
+}
+
+.DualList .dragdrop-selected,.DualList .dragdrop-movable-panel .DualList-item-has-content
+	{
+	background-color: blue;
+}
+
+.ToolbarPanel {
+	background-color: #DDDDDD;
+	border: 2px outset #AAAAAA;
+}
+
+.ToolbarPanel-Splitter {
+	cursor: move;
+}
+
+.Toolbar {
+	border-width: 0px;
+	top: 0px;
+}
+
+.Toolbar-Image {
+	cursor: hand;
+	top: 0px;
+}
+
+.notificationPanel {
+	background-color: #DEE7E7;
+	border: 1px solid #009;
+	overflow: hidden;
+	height: 145px;
+	left: 700px;
+	top: 546px;
+	z-index: 2147483647;
+	position: fixed;
+	clip: rect(auto, auto, auto, auto);
+}
+
+.infoTextBox {
+	
+}
+
+.infoHelp {
+	background: url(images/info-24.png) top;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+.infoHelp:hover {
+	background-position: bottom;
+}
+
+.infoLabel {
+	
+}
+
+.infoLabel label {
+	float: left;
+}
+
+
+
+.Vertical-Label {
+	color: #333;
+	border: 0px solid red;
+	writing-mode: tb-rl;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	white-space: nowrap;
+	display: block;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	text-shadow: 0px 0px 1px #333;
+}
+
+.qq-uploader {
+	position: relative;
+	width: 100%;
+}
+
+.qq-upload-button {
+	display: block; /* or inline-block */
+	width: 105px;
+	padding: 7px 0;
+	text-align: center;
+	background: #880000;
+	border-bottom: 1px solid #ddd;
+	color: #fff;
+}
+
+.qq-upload-button-hover {
+	background: #cc0000;
+}
+
+.qq-upload-button-focus {
+	outline: 1px dotted black;
+}
+
+.qq-upload-drop-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 70px;
+	z-index: 2;
+	background: #FF9797;
+	text-align: center;
+}
+
+.qq-upload-drop-area span {
+	display: block;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -8px;
+	font-size: 16px;
+}
+
+.qq-upload-drop-area-active {
+	background: #FF7171;
+}
+
+.qq-upload-list {
+	margin: 15px 35px;
+	padding: 0;
+	list-style: disc;
+}
+
+.qq-upload-list li {
+	margin: 0;
+	padding: 0;
+	line-height: 15px;
+	font-size: 12px;
+}
+
+.qq-upload-file,.qq-upload-spinner,.qq-upload-size,.qq-upload-cancel,.qq-upload-failed-text
+	{
+	margin-right: 7px;
+}
+
+.qq-upload-file {
+	
+}
+
+.qq-upload-spinner {
+	display: inline-block;
+	background: url("images/loading.gif");
+	width: 15px;
+	height: 15px;
+	vertical-align: text-bottom;
+}
+
+.qq-upload-size,.qq-upload-cancel {
+	font-size: 11px;
+}
+
+.qq-upload-failed-text {
+	display: none;
+}
+
+.qq-upload-fail .qq-upload-failed-text {
+	display: inline;
+}
+
+.hasRichTextToolbar {
+	border: 0px;
+}
+
+.gwt-RichTextToolbar {
+	background: #e3e8f3 url(images/hborder.png) repeat-x 0px -2003px;
+	border-bottom: 1px solid #BBBBBB;
+	padding: 3px;
+	margin: 0px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-up {
+	padding: 0px 1px 0px 0px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-up-hovering {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 1px 0px 0px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-down {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 1px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 1px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-up {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 1px 0px 0px;
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #a0a0a0;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-up-hovering {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 1px 0px 0px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-down {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 1px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-down-hovering {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 1px;
+	border-width: 1px;
+}

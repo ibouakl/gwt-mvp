@@ -1,0 +1,121 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.gwt.composants</groupId>
+	<artifactId>gwt-mvp-ui</artifactId>
+	<version>2.0.1</version>
+	<name>GWT UI Component</name>
+	<description>gwt-ui</description>
+
+
+	<dependencies>
+		<!-- GWT dependencies (from central repo) -->
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-servlet</artifactId>
+			<version>${gwt.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			<version>${gwt.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>gwt-maven-plugin</artifactId>
+				<version>2.3.0-1</version>
+				<dependencies>
+					<dependency>
+						<groupId>com.google.gwt</groupId>
+						<artifactId>gwt-user</artifactId>
+						<version>${gwt.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>com.google.gwt</groupId>
+						<artifactId>gwt-dev</artifactId>
+						<version>${gwt.version}</version>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<configuration>
+							<extraJvmArgs>-Xmx512M -Xss1024k</extraJvmArgs>
+						</configuration>
+						<goals>
+							<goal>clean</goal>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${bytecode.version}</source>
+					<target>${bytecode.version}</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<xmlOutput>true</xmlOutput>
+				</configuration>
+			</plugin>
+			<plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <!-- version pour maven 2 -->
+                <version>1.0</version>
+            </plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/main/tinymce</directory>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/client/**/*.java</include>
+					<include>**/shared/**/*.java</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+	<properties>
+		<maven-compiler-plugin.version>2.0.2</maven-compiler-plugin.version>
+		<bytecode.version>1.6</bytecode.version>
+		<jvm.version>6</jvm.version>
+		<gwt.version>2.4.0</gwt.version>
+	</properties>
+</project>

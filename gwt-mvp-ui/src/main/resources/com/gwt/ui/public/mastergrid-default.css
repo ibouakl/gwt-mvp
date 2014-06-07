@@ -1,0 +1,95 @@
+.masterview-grid {
+	border-collapse: collapse;
+	border: 1px solid #618db7;
+}
+
+.masterview-grid-header-cell {
+	padding: 0.25em 0.5em;
+	border: 1px solid #618db7;
+	/*border-bottom-width: 0;*/
+}
+
+.masterview-grid-row-cell {
+	padding: 0.25em 0.5em;
+	border: 1px solid #acc7d7;
+	/*border-bottom-width: 0;*/
+}
+
+.masterview-grid-filter {
+	height: 26px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	background-color: #ddd;
+	border: 1px solid #acc7d7;
+}
+
+.masterview-grid-filter-textbox {
+	background-color: #ffffcd;
+	border: 1px solid #cccccc;
+}
+
+.masterview-grid-header {
+	text-align: left;
+	padding: 0.5ex 0 0.5ex 0;
+	background: url(images/redGradient.png) repeat-x #FE0000;
+	height: 26px;
+	border: 1px solid #618db7;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+}
+
+.masterview-grid-sorted-asc {
+	padding: 0.25em 0.5em;
+	background: url( "masterview/arrow_up.png" ) no-repeat right #92b6d9;
+}
+
+.masterview-grid-sorted-desc {
+	padding: 0.25em 0.5em;
+	background: url( "masterview/arrow_down.png" ) no-repeat right #92b6d9;
+}
+
+.masterview-grid-row-even {
+	padding: 0.5ex 2em 0.5ex 2em;
+	height: 26px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	background-color: #e4f2f6;
+	border: 1px solid #acc7d7;
+}
+
+.masterview-grid-row-odd {
+	padding: 0.5ex 2em 0.5ex 2em;
+	height: 26px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	border: 1px solid #acc7d7;
+}
+
+.masterview-grid-row-highlight {
+	font-family: Verdana, Arial, sans-serif;
+	padding: 0.5ex 2em 0.5ex 2em;
+	height: 26px;
+	font-size: 11px;
+	border: 1px solid #acc7d7;
+}
+
+.masterview-pager {
+	border: 1px solid #618db7;
+}
+
+.masterview-pager-status {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+	color: white;
+	padding: 1ex 2em 0 1ex;
+	text-align: right;
+}
+
+.masterview-pager-navigation {
+	height: 28px;
+	background: url( "masterview/mastergrid-navigation-back.png" ) repeat-x
+		#7da4ca;
+	border: 1px solid #acc7d7;
+}
