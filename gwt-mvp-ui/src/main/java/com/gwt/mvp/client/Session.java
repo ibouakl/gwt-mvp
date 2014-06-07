@@ -7,6 +7,7 @@ import java.util.Enumeration;
  * 
  * @author jguibert
  * @author ibouakl
+ * 
  */
 public interface Session {
 
