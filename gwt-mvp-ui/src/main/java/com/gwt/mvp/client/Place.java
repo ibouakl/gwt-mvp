@@ -20,6 +20,7 @@ import java.util.Set;
  * 
  * @author jguibert
  * @author David Peterson
+ * 
  */
 public class Place {
     
