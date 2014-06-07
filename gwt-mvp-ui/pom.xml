@@ -110,6 +110,7 @@
 			</resource>
 		</resources>
 	</build>
+	
 	<properties>
 		<maven-compiler-plugin.version>2.0.2</maven-compiler-plugin.version>
 		<bytecode.version>1.6</bytecode.version>
