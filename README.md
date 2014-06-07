@@ -9,6 +9,7 @@ To use this gwt module into a GWT application:
 
 
 	1- Add the following dependency to the POM:	
+		
 		<dependency>
 			<groupId>com.gwt.composants</groupId>
 			<artifactId>gwt-mvp-ui</artifactId>
@@ -17,8 +18,8 @@ To use this gwt module into a GWT application:
 
 	2- Add to the gwt.xml file:
 
-	<inherits name='com.gwt.mvp.Mvp' /> <!-- For the mvp module -->
-	<inherits name='com.gwt.ui.Ui' />   <!-- For the widget module -->
+		<inherits name='com.gwt.mvp.Mvp' /> <!-- For the mvp module -->
+		<inherits name='com.gwt.ui.Ui' />   <!-- For the widget module -->
 
 
 For any questions about this project, please contact us by email :
