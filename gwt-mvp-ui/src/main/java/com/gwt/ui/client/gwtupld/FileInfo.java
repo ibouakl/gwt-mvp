@@ -53,6 +53,7 @@ public class FileInfo {
     return loaded;
   }
 
+  
   public int getTotal() {
     return total;
   }
