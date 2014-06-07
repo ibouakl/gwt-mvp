@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='yallavotewebadmin'>
+
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.rpc.RPC' />
+	<inherits name='com.gwt.mvp.Mvp' />
+	<inherits name='com.gwt.ui.Ui' />
+	<!-- Other module inherits -->
+	<!-- SOURCE -->
+	<entry-point class='com.gwt.mvp.ui.showcase.client.MainModule' />
+	<!-- SOURCE -->
+	<source path='client' />
+	<public path="public" />
+
+	<!-- Specify the application specific style sheet. -->
+	<stylesheet src='themes/showcase.css' />
+
+</module>
