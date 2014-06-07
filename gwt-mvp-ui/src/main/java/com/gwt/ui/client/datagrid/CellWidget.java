@@ -5,6 +5,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwt.ui.client.LabelMarkup;
 
 /**
+ * 
  * @author ibouakl
  */
 public class CellWidget extends Composite {
