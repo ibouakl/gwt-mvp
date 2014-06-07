@@ -6,8 +6,9 @@ Demo coming soon to show you how to use this gwt module into a gwt application:
 
 
 To use this gwt module into a GWT application:
-	1- Add the following dependency to the POM:
-		
+
+
+	1- Add the following dependency to the POM:	
 		<dependency>
 			<groupId>com.gwt.composants</groupId>
 			<artifactId>gwt-mvp-ui</artifactId>
