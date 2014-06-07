@@ -7,8 +7,9 @@ package com.gwt.mvp.client;
  * 
  * 
  * @author jguibert
- * @author David Peterson
  * @author ibouakl
+ * 
+ * @author David Peterson
  */
 public interface Presenter {
     
