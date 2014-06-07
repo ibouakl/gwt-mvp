@@ -1,11 +1,11 @@
 
 
-Demo coming soon to show you how to use this gwt module into a gwt application: 
+Demo coming soon to show you how to use this gwt project into a gwt application: 
 
 
 
 
-To use this gwt module into a GWT application:
+To use this gwt project  into a GWT application:
 
 
 	1- Add the following dependency to the POM:	
