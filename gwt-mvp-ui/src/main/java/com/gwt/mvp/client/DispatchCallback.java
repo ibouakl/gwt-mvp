@@ -50,6 +50,7 @@ public abstract class DispatchCallback<T> implements AsyncCallback<T> {
         callback(result);
     }
     
+    
     /**
      * Must be overriden by clients to handle callbacks
      * 
