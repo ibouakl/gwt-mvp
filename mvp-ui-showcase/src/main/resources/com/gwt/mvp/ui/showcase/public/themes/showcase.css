@@ -1,0 +1,693 @@
+body {
+	background: url(../images/bg.gif) repeat-x left top #d4d3d3;
+	font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #333;
+	min-width: 1200px;
+}
+
+.container_12,.container_16 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+
+.container_12 .grid_12,.container_16 .grid_16 {
+	width: 1180px;
+}
+
+.container_12 .grid_6,.container_16 .grid_8 {
+	width: 566px;
+}
+
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,.grid_13,.grid_14,.grid_15,.grid_16
+	{
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/* styles generiques additionels */
+input[type=text],textarea,input[type=file] {
+	padding: 3px 3px;
+	color: #333 !important;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	margin-top: 2px;
+	background-color: #FFFFFF;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.02, rgb(255
+		, 255, 255)), color-stop(0.51, rgb(255, 247, 247)));
+	background-image: -moz-linear-gradient(center bottom, rgb(255, 255, 255)
+		2%, rgb(255, 247, 247) 51%);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+input:hover,textarea:hover,input:focus,textarea:focus {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px;
+}
+
+input.gwt-TextBox {
+	height: 24px;
+	margin-right: 5px;
+}
+
+.data-Grid thead tr,.dock {
+	background: #e2001a;
+	background: -moz-linear-gradient(top, #114070, #114070);
+	background: -webkit-gradient(linear, center top, center bottom, from(#114070),
+		to(#114070));
+	background: -o-linear-gradient(top, #114070, #114070);
+	background: linear-gradient(top, #114070, #114070);
+}
+
+.editContentItem {
+	background-color: #fcfcfc;
+	padding: 10px;
+	-moz-border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.inputRow {
+	width: auto;
+	margin-bottom: 1px;
+	padding: 5px 0 4px 5px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.inputRow:nth-child(odd) {
+	background-color: white;
+}
+
+.inputRow label {
+	display: inline-block !important;
+	/*override de la propri�t� "block" des label seuls */
+	vertical-align: top;
+	width: 20%;
+}
+
+.inputRow .infoLabel {
+	display: inline;
+	vertical-align: top;
+	width: 20%;
+}
+
+.inputRow  input[type=text],.inputRow textarea {
+	width: 48%;
+}
+
+.inputRow  .infoTextBox {
+	width: 48%;
+}
+
+.inputRow  .textEditor {
+	display: inline-block !important;
+	vertical-align: top;
+	width: 48%;
+}
+
+.inputRow  .SafeTextArea {
+	display: inline-block !important;
+	vertical-align: top;
+	width: 48%;
+}
+
+.inputRow  .SafeTextArea  input[type=text],.inputRow .SafeTextArea textarea
+	{
+	width: 460px;
+}
+
+.inputRow  .SafeTextEditor {
+	display: inline-block !important;
+	vertical-align: top;
+	width: 48%;
+}
+
+.inputRow  .SafeTextEditor  input[type=text],.inputRow .SafeTextEditor textarea
+	{
+	width: 460px;
+}
+
+.menu {
+	float: left;
+}
+
+.menu ul.group {
+	margin: 0;
+	padding: 0px 0px 0px;
+	list-style: none;
+	float: left;
+	z-index: 4;
+}
+
+.menu ul.group li {
+	display: inline;
+	float: left;
+	position: static;
+	z-index: 5;
+	margin-left: 0px !important;
+}
+
+.menu ul.group li a {
+	display: block;
+	float: left;
+	height: 70px;
+	width: 114px;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	z-index: 6;
+	border-right: 1px solid black;
+}
+
+.menu ul.group li a * {
+	cursor: pointer;
+}
+
+.menu ul.group li.disabled a * {
+	cursor: default;
+}
+
+.menu ul.group li a span.outer {
+	display: block;
+	height: 67px;
+	padding-top: 3px
+}
+
+.menu ul.group li.first a span.outerClicked {
+	-moz-border-radius: 20px 0px 0px;
+	-webkit-border-radius: 20px 0px 0px 0px;
+	border-radius: 20px 0px 0px;
+}
+
+.menu ul.group li a span.outerClicked {
+	display: block;
+	height: 67px;
+	padding-top: 3px;
+	background-color: #E0E9F5;
+}
+
+.menu ul.group li a span.selected {
+	display: block;
+	height: 67px;
+	padding-top: 3px;
+	background-color: red;
+}
+
+.menu ul.group li a span.inner {
+	display: block;
+	padding: 40px 10px 9px 10px;
+	white-space: nowrap;
+	background-repeat: no-repeat;
+	background-position: 50% 5px;
+}
+
+.menu ul.group li.first {
+	-moz-border-radius: 20px 0px 0px;
+	-webkit-border-radius: 20px 0px 0px 0px;
+	border-radius: 20px 0px 0px;
+}
+
+.menu ul.group li.last a span.inner {
+	border: none !important;
+}
+
+.menu ul.group li a:hover,.menu ul.group li a.hover {
+	background-position: bottom left;
+	text-decoration: none;
+}
+
+.menu ul.group li.last a:hover,.menu ul.group li.last a.hover {
+	background-position: bottom right;
+}
+
+.menu ul.group li.disabled a:hover,.menu ul.group li.disabled a.hover,.menu ul.group li.last.disabled a:hover,.menu ul.group li.last.disabled a.hover
+	{ /* background-position: top right; */
+	text-decoration: none;
+}
+
+.menu ul.group li a.current {
+	background-position: bottom left;
+	text-decoration: none;
+}
+
+.menu ul.group li.last a.current {
+	background-position: bottom right;
+}
+
+.menu ul.group li.first a.current {
+	background-position: bottom left;
+}
+
+.menu ul.group li a.more {
+	
+}
+
+.menu .additional a span {
+	border-right: 1px solid #DFDCBB;
+}
+
+.menu .dashboard {
+	background-image: url(../images/icon_dashboard.png);
+	background-repeat: no-repeat;
+}
+
+.menu .content {
+	background-image: url(../images/icon_edit.png);
+	background-repeat: no-repeat;
+}
+
+.menu .media_library {
+	background-image: url(../images/icon_media.png);
+	background-repeat: no-repeat;
+}
+
+.menu .users {
+	background-image: url(../images/icon_users.png);
+	background-repeat: no-repeat;
+}
+
+.menu .settings {
+	background-image: url(../images/icon_settings.png);
+	background-repeat: no-repeat;
+}
+
+.centerMasterPanel {
+	min-height: 500px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	background: #FFFFFF center bottom no-repeat;
+	-moz-border-radius: 0px 0px 20px 20px;
+	-webkit-border-radius: 0px 0px 20px 20px;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.header {
+	display: block;
+	height: 34px;
+}
+
+.logo {
+	display: block;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: normal;
+	color: white;
+}
+
+.dock {
+	-moz-border-radius: 20px 20px 0px 0px;
+	-webkit-border-radius: 20px 20px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
+	height: 70px;
+	display: block;
+}
+
+a,a:active,a:link,a:visited {
+	text-decoration: none;
+	color: #C00;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+.contentArea {
+	padding: 5px 15px;
+}
+
+.user_tools {
+	background-color: black;
+	height: 34px;
+	padding-right: 9px;
+	float: right;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.user_tools span {
+	height: 34px;
+	padding-left: 9px;
+	line-height: 34px;
+	font-size: 10px;
+	color: #b0b0b0;
+	display: block;
+	float: right;
+}
+
+.user_tools a:before {
+	content: " |";
+	color: #808080;
+	padding-right: 8px;
+}
+
+.user_tools a:first-child:before {
+	content: "";
+}
+
+.user_tools a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.user_tools a:hover {
+	text-decoration: none;
+}
+
+.user_tools a.mail {
+	background: url(../images/icon_mail_small.gif) left 2px no-repeat;
+	padding-left: 17px;
+	margin-right: 5px;
+}
+
+.user_tools a.mail:hover {
+	text-decoration: none !important;
+}
+
+.button_ok {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background: transparent url('../images/but_round_span_blue.gif')
+		no-repeat scroll top right;
+	color: #FFF;
+	display: inline-block;
+	height: 30px;
+	margin-right: 6px;
+	margin-top: 10px;
+	padding-right: 15px !important;
+	text-decoration: none;
+	overflow: hidden;
+	font-size: 12px;
+	outline: none !important;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.button_ok span {
+	background: url('../images/but_round_ok_blue.gif') no-repeat left top;
+	display: inline-block;
+	line-height: 30px;
+	padding: 0px 0px 0px 35px;
+	outline: none !important;
+}
+
+.button_ok:hover {
+	background-position: right bottom;
+	text-decoration: none !important
+}
+
+.button_ok:hover span {
+	background-position: left bottom;
+	color: #FFF;
+}
+
+.button_add {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background: transparent url(../images/but_right_blue.gif) no-repeat
+		scroll right top;
+	color: #FFF;
+	display: inline-block;
+	height: 29px;
+	margin-right: 16px;
+	margin-top: 10px;
+	padding-right: 15px;
+	text-decoration: none;
+	overflow: hidden;
+	font-size: 12px;
+	outline: none !important;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.button_delete {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background: transparent url(../images/but_right_blue.gif) no-repeat
+		scroll right top;
+	color: #FFF;
+	display: inline-block;
+	height: 29px;
+	margin-right: 6px;
+	margin-top: 10px;
+	padding-right: 15px;
+	text-decoration: none;
+	overflow: hidden;
+	font-size: 12px;
+	outline: none !important;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.button_add span,.button_delete span {
+	background: transparent url(../images/but_left_blue.gif) no-repeat
+		scroll left top;
+	display: inline-block;
+	line-height: 30px;
+	padding: 0px 0px 0px 15px;
+	outline: none !important;
+}
+
+.button_add:hover,.button_delete:hover {
+	background-position: right bottom;
+	text-decoration: none !important
+}
+
+.button_add:hover span,.button_delete:hover span {
+	background-position: left bottom;
+	color: #FFF;
+}
+
+.tabArea {
+	background: #E0E9F5;
+	min-height: 33px;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	line-height: 33px;
+}
+
+.tabArea a {
+	margin-left: 5px;
+}
+
+.Loading-Popup {
+	z-index: 20000;
+}
+
+h1.picto-content {
+	background: url(../images/icon_content_small.gif) left 3px no-repeat;
+	padding-left: 35px;
+}
+
+a.edit_icon {
+	background: url(../images/icons/action_edit.gif) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+a.lock_icon {
+	background: url(../images/icons/action_lock.png) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+a.unlock_icon {
+	background: url(../images/icons/action_unlock.png) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+a.email_icon {
+	background: url(../images/icons/action_email.png) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+a.publish_icon {
+	background: url(../images/icons/action_publish.gif) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+a.unpublish_icon {
+	background: url(../images/icons/action_unpublish.gif) no-repeat left top;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.site-list-panel {
+	margin-top: 10px;
+}
+
+.PopupCreationView {
+	border-bottom: 1px solid #bbbbbb;
+	padding-bottom: 20px;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+.PopupCreationView label {
+	display: block !important;
+	line-height: normal !important;
+	margin: 5px 0px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.PopupCreationView input[type=text],.PopupCreationView textarea {
+	width: 400px;
+}
+
+.feedMessage-widget {
+	
+}
+
+.feedMessage-widget .feedMessage-title {
+	color: #3B5998;
+	line-height: 1em;
+	margin-bottom: 1em;
+	text-shadow: 1px 1px 0 white;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.gwt-DatePicker {
+	border: 1px solid #ccc;
+	border-top: 1px solid #999;
+	cursor: default;
+}
+
+.gwt-DatePicker td,.datePickerMonthSelector td:focus {
+	outline: none;
+}
+
+.datePickerMonthSelector td:focus {
+	outline: none;
+}
+
+.datePickerDays {
+	width: 100%;
+	background: white;
+}
+
+.datePickerDay,.datePickerWeekdayLabel,.datePickerWeekendLabel {
+	font-size: 85%;
+	text-align: center;
+	padding: 4px;
+	outline: none;
+	font-weight: bold;
+	color: #333;
+	border-right: 1px solid #EDEDED;
+	border-bottom: 1px solid #EDEDED;
+}
+
+.datePickerWeekdayLabel,.datePickerWeekendLabel {
+	background: #fff;
+	padding: 0px 4px 2px;
+	cursor: default;
+	color: #666;
+	font-size: 70%;
+	font-weight: normal;
+}
+
+.datePickerDay {
+	padding: 4px 7px;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.datePickerDayIsWeekend {
+	background: #f7f7f7;
+}
+
+.datePickerDayIsFiller {
+	color: #999;
+	font-weight: normal;
+}
+
+.datePickerDayIsValue {
+	background: #d7dfe8;
+}
+
+.datePickerDayIsDisabled {
+	color: #AAAAAA;
+	font-style: italic;
+}
+
+.datePickerDayIsHighlighted {
+	background: #F0E68C;
+}
+
+.datePickerDayIsValueAndHighlighted {
+	background: #d7dfe8;
+}
+
+.datePickerDayIsToday {
+	padding: 3px;
+	color: #fff;
+	background: url(../images/hborder.png) repeat-x 0px -2607px;
+}
+
+.datePickerMonthSelector {
+	width: 100%;
+	padding: 1px 0 5px 0;
+	background: #fff;
+}
+
+.datePickerPreviousButton,.datePickerNextButton {
+	font-size: 120%;
+	line-height: 1em;
+	color: #3a6aad;
+	cursor: hand;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 0px 4px;
+	outline: none;
+}
+
+td.datePickerMonth {
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	font-size: 100%;
+	font-weight: bold;
+	color: #333;
+}
+
+.gwt-DateBox {
+	padding: 5px 4px;
+	border: 1px solid #ccc;
+	border-top: 1px solid #999;
+	font-size: 100%;
+}
+
+.gwt-DateBox input {
+	width: 8em;
+}
