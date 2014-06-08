@@ -30,6 +30,7 @@ public class MainModule extends ModuleEntryPoint {
         
     }
     
+    
     @Override
     protected void addPresenters(RootPresenter rootPresenter, EventBus eventBus) {
         main = new MainPresenter(new MainDisplay(), eventBus);
