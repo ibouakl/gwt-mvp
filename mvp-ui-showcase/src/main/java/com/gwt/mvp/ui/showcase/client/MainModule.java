@@ -23,14 +23,18 @@ public class MainModule extends ModuleEntryPoint {
     private MainPresenter main = null;
     
     /**
-     * Build a new instance of <code> Module</code>.
+     * Build a new instance of mvp-ui-showcase Module.
      */
     public MainModule() {
         super();
         
     }
     
-    
+    /**
+     * Here we define all presenters
+     * 
+     * @author ibouakl
+     */
     @Override
     protected void addPresenters(RootPresenter rootPresenter, EventBus eventBus) {
         main = new MainPresenter(new MainDisplay(), eventBus);
@@ -43,11 +47,17 @@ public class MainModule extends ModuleEntryPoint {
         rootPresenter.addPresenter(main);
     }
     
+    /**
+     * set the default place
+     */
     @Override
     protected Place getDefaultPlace() {
         return DashboardPresenter.PLACE;
     }
     
+    /**
+     * @author ibouakl
+     */
     @Override
     protected void revealRoot(final RootPresenter root, final EventBus eventBus) {
         root.revealRoot();

@@ -3,13 +3,17 @@
 
 	<inherits name='com.google.gwt.user.User' />
 	<inherits name='com.google.gwt.rpc.RPC' />
+
+	<!-- module inherits -->
 	<inherits name='com.gwt.mvp.Mvp' />
 	<inherits name='com.gwt.ui.Ui' />
-	<!-- Other module inherits -->
+
 	<!-- SOURCE -->
 	<entry-point class='com.gwt.mvp.ui.showcase.client.MainModule' />
+	
 	<!-- SOURCE -->
 	<source path='client' />
+	<source path='shared' />
 	<public path="public" />
 
 	<!-- Specify the application specific style sheet. -->
