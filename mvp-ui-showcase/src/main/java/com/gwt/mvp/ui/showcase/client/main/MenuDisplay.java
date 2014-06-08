@@ -55,6 +55,7 @@ public class MenuDisplay implements MenuPresenter.MenuPresenterDisplay {
         
         // Dashboard button
         dashborad = new DockButton("Dashboard", "outer", "inner dashboard");
+        currentDockButton = dashborad;
         dashborad.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
@@ -68,7 +69,7 @@ public class MenuDisplay implements MenuPresenter.MenuPresenterDisplay {
         
         // Content button
         content = new DockButton("Contents", "outerClicked", "inner content");
-        currentDockButton = content;
+    
         content.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
@@ -91,8 +92,14 @@ public class MenuDisplay implements MenuPresenter.MenuPresenterDisplay {
                 currentDockButton = widgets;
             }
         });
+        
+        
         listItem.addItem(widgets, "item middle");
         return listItem;
+        
+        
+        
+        
     }
     
     private void initDock() {
@@ -116,6 +123,17 @@ public class MenuDisplay implements MenuPresenter.MenuPresenterDisplay {
     
     public Widget asWidget() {
         return menuPanel;
+    }
+
+    @Override
+    public void addContentClickHandler(ClickHandler clickHandler) {
+        content.addClickHandler(clickHandler);
+    }
+
+    @Override
+    public void addDashboardClickHandler(ClickHandler clickHandler) {
+        dashborad.addClickHandler(clickHandler);
+        
     }
     
 }

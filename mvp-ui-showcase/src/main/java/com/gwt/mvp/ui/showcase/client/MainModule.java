@@ -6,12 +6,12 @@ import com.gwt.mvp.client.Place;
 import com.gwt.mvp.client.presenter.ComboDisplay;
 import com.gwt.mvp.client.presenter.ComboPresenter;
 import com.gwt.mvp.client.presenter.RootPresenter;
-import com.gwt.mvp.ui.showcase.client.main.FooterDisplay;
-import com.gwt.mvp.ui.showcase.client.main.FooterPresenter;
 import com.gwt.mvp.ui.showcase.client.main.MainDisplay;
 import com.gwt.mvp.ui.showcase.client.main.MainPresenter;
 import com.gwt.mvp.ui.showcase.client.main.MenuDisplay;
 import com.gwt.mvp.ui.showcase.client.main.MenuPresenter;
+import com.gwt.mvp.ui.showcase.client.main.content.ContentDisplay;
+import com.gwt.mvp.ui.showcase.client.main.content.ContentPresenter;
 import com.gwt.mvp.ui.showcase.client.main.dashboard.DashBoardDisplay;
 import com.gwt.mvp.ui.showcase.client.main.dashboard.DashboardPresenter;
 
@@ -23,7 +23,7 @@ public class MainModule extends ModuleEntryPoint {
     private MainPresenter main = null;
     
     /**
-     * Build a new instance of <code>yalla vote admin Module</code>.
+     * Build a new instance of <code> Module</code>.
      */
     public MainModule() {
         super();
@@ -36,9 +36,10 @@ public class MainModule extends ModuleEntryPoint {
         // Header
         main.addPresenter(MainDisplay.Label.MENU, new MenuPresenter(new MenuDisplay(), eventBus));
         // center
-        main.addPresenter(MainDisplay.Label.CENTER, new ComboPresenter<ComboDisplay>(new ComboDisplay(), eventBus, new DashboardPresenter(new DashBoardDisplay(), eventBus)));
+        main.addPresenter(MainDisplay.Label.CENTER, new ComboPresenter<ComboDisplay>(new ComboDisplay(), eventBus, new DashboardPresenter(new DashBoardDisplay(), eventBus), new ContentPresenter(new ContentDisplay(), eventBus)));
         
-        main.addPresenter(MainDisplay.Label.FOOTER, new FooterPresenter(new FooterDisplay(), eventBus));
+        // root presenter: add the main presenter to root presenter
+        rootPresenter.addPresenter(main);
     }
     
     @Override

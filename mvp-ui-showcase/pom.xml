@@ -56,7 +56,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-
 		<dependency>
 			<groupId>com.gwt.composants</groupId>
 			<artifactId>gwt-mvp-ui</artifactId>
@@ -65,12 +64,6 @@
 	</dependencies>
 	
 	<properties>
-		<!-- default settings -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.compiler.version>1.7</java.compiler.version>
-		<java.source.version>1.7</java.source.version>
-		<java.target.version>1.7</java.target.version>
-		<java.source.encoding>UTF-8</java.source.encoding>
 		<gwt.version>2.6.0</gwt.version>
 	</properties>
 
