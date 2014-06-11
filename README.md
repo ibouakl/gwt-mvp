@@ -5,8 +5,8 @@ A model-view-presenter framework to  your GWT project.
 
 
 # Reference
-   * https://github.com/ibouakl/gwt - Find the gwt-mvp-ui home here
-   * https://github.com/ibouakl/gwt/wiki - How to use gwt-mvp-ui
+   * [GWTP Documentation](https://github.com/ibouakl/gwt) - Find the gwt-mvp-ui home here
+   * [GWTP Documentation](https://github.com/ibouakl/gwt/wiki) - How to use gwt-mvp-ui
 
 
 
