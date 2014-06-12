@@ -1,6 +1,6 @@
 
 
-A model-view-presenter framework to  your GWT project.
+A *model-view-presenter* framework to  your GWT project a &&  *GWT widget librairy*.
 
 
 
