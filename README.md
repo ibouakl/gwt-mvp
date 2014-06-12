@@ -1,6 +1,6 @@
 
 
-A model-view-presenter framework to  your GWT project &&  GWT widget librairy.
+this framework contains A model-view-presenter module AND GWT widget library module to help you build better GWT application.
 
 
 
