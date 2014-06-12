@@ -6,7 +6,7 @@ this framework contains A model-view-presenter module AND GWT widget library mod
 
 # Reference
    * [Home](https://github.com/ibouakl/gwt) - Find the gwt-mvp-ui home here
-   * [GWTP Documentation](https://github.com/ibouakl/gwt/wiki) - How to use gwt-mvp-ui
+   * [gwt-mvp-ui Documentation](https://github.com/ibouakl/gwt/wiki) - How to use gwt-mvp-ui
 
 
 
