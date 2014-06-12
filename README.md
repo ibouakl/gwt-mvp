@@ -1,6 +1,6 @@
 
 
-this framework contains A model-view-presenter module AND GWT widget library module to help you build better GWT application.
+This framework contains A model-view-presenter  module to help you build better GWT application. also, its provides simple and flexible components for more beautiful gwt web development.
 
 
 
